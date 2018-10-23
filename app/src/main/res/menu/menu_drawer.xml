@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+        <item android:id="@+id/receta"
+            android:title="Recetas"
+            android:icon="@drawable/ic_local_dining"/>
+
+        <item android:id="@+id/nosotros"
+            android:title="Sobre nosotros"
+            android:icon="@drawable/ic_account_box"/>
+
+</menu>
