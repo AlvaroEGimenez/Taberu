@@ -1,6 +1,7 @@
-package com.example.alva.taberu;
+package com.example.alva.taberu.view;
 
 import android.os.Bundle;
+import android.os.Handler;
 import android.support.annotation.NonNull;
 import android.support.design.widget.NavigationView;
 import android.support.v4.app.Fragment;
@@ -12,6 +13,12 @@ import android.support.v7.app.ActionBarDrawerToggle;
 import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.Toolbar;
 import android.view.MenuItem;
+import android.widget.Toast;
+
+import com.example.alva.taberu.view.fragments.InicioFragment;
+import com.example.alva.taberu.R;
+import com.example.alva.taberu.view.fragments.RecetasFragment;
+import com.example.alva.taberu.view.fragments.SobreNosotrosFragment;
 
 
 public class MainActivity extends AppCompatActivity {
@@ -21,6 +28,8 @@ public class MainActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
+
+
 
         Toolbar toolbar = findViewById(R.id.toolbar);
         setSupportActionBar(toolbar);
@@ -65,12 +74,24 @@ public class MainActivity extends AppCompatActivity {
         fragmentTransaction.commit();
     }
 
+    boolean doubleBackToExitPressedOnce = false;
     @Override
     public void onBackPressed() {
+        if (doubleBackToExitPressedOnce){
+            super.onBackPressed();
+            return;
+        }
+        this.doubleBackToExitPressedOnce = true;
+        Toast.makeText(this, "Presione nuevamente para salir", Toast.LENGTH_SHORT).show();
+        new Handler().postDelayed(new Runnable() {
+            @Override
+            public void run() {
+                doubleBackToExitPressedOnce = false;
+            }
+        },2000);
+
         if (drawerLayout.isDrawerOpen(GravityCompat.START)) {
             drawerLayout.closeDrawer(GravityCompat.START);
-        } else {
-            super.onBackPressed();
         }
     }
 }

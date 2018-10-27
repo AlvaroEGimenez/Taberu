@@ -9,7 +9,7 @@
         android:roundIcon="@mipmap/ic_launcher1"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".MainActivity"
+        <activity android:name=".view.MainActivity"
             android:theme="@style/AppTheme">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -17,8 +17,8 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".DetalleActivity"
-            android:theme="@style/AppTheme">
+        <activity android:name=".view.DetalleActivity"
+            android:theme="@style/AppTheme1">
 
         </activity>
     </application>

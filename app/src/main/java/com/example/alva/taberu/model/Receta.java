@@ -1,4 +1,4 @@
-package com.example.alva.taberu;
+package com.example.alva.taberu.model;
 
 import java.io.Serializable;
 
