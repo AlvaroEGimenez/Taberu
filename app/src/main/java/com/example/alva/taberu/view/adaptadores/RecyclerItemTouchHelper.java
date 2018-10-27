@@ -1,9 +1,11 @@
-package com.example.alva.taberu;
+package com.example.alva.taberu.view.adaptadores;
 
 import android.graphics.Canvas;
 import android.support.v7.widget.RecyclerView;
 import android.support.v7.widget.helper.ItemTouchHelper;
 import android.view.View;
+
+import com.example.alva.taberu.view.adaptadores.AdaptadorRecetas;
 
 public class RecyclerItemTouchHelper extends ItemTouchHelper.SimpleCallback {
 

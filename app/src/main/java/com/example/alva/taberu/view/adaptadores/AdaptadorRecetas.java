@@ -1,4 +1,4 @@
-package com.example.alva.taberu;
+package com.example.alva.taberu.view.adaptadores;
 
 import android.content.Context;
 import android.support.annotation.NonNull;
@@ -12,6 +12,9 @@ import android.widget.FrameLayout;
 import android.widget.ImageView;
 import android.widget.RelativeLayout;
 import android.widget.TextView;
+
+import com.example.alva.taberu.R;
+import com.example.alva.taberu.model.Receta;
 
 import java.util.ArrayList;
 import java.util.List;

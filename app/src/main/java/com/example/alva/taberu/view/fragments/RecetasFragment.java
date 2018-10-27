@@ -1,4 +1,4 @@
-package com.example.alva.taberu;
+package com.example.alva.taberu.view.fragments;
 
 
 import android.content.Intent;
@@ -18,6 +18,12 @@ import android.view.MenuItem;
 import android.view.View;
 import android.view.ViewGroup;
 import android.view.inputmethod.EditorInfo;
+
+import com.example.alva.taberu.view.adaptadores.AdaptadorRecetas;
+import com.example.alva.taberu.R;
+import com.example.alva.taberu.view.adaptadores.RecyclerItemTouchHelper;
+import com.example.alva.taberu.model.Receta;
+import com.example.alva.taberu.view.DetalleActivity;
 
 import java.io.Serializable;
 import java.util.ArrayList;

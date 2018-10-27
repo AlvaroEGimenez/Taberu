@@ -1,4 +1,4 @@
-package com.example.alva.taberu;
+package com.example.alva.taberu.view.fragments;
 
 
 
@@ -6,13 +6,15 @@ import android.os.Bundle;
 import android.support.design.widget.CollapsingToolbarLayout;
 import android.support.v4.app.Fragment;
 
-import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.Toolbar;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.ImageView;
 import android.widget.TextView;
+
+import com.example.alva.taberu.R;
+import com.example.alva.taberu.model.Receta;
 
 
 /**
